@@ -1,0 +1,22 @@
+public class SquareHollowPatternPrinter {
+
+	private static final int START_NUMBER = 1;
+	private static final int END_NUMBER = 5;
+
+	public static void main(String[] args) {
+		print();
+	}
+
+	private static void print() {
+		int i, j;
+		for (i = START_NUMBER; i <= END_NUMBER; i++) {
+			for (j = START_NUMBER; j <= END_NUMBER; j++) {
+				if (j == START_NUMBER || i == START_NUMBER || j == END_NUMBER || i == END_NUMBER)
+					System.out.print("*");
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}
+	}
+}
